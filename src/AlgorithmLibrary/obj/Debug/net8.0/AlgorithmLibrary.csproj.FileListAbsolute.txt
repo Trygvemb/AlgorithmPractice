@@ -1,0 +1,11 @@
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/bin/Debug/net8.0/AlgorithmLibrary.deps.json
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/bin/Debug/net8.0/AlgorithmLibrary.dll
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/bin/Debug/net8.0/AlgorithmLibrary.pdb
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/obj/Debug/net8.0/AlgorithmLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/obj/Debug/net8.0/AlgorithmLibrary.AssemblyInfoInputs.cache
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/obj/Debug/net8.0/AlgorithmLibrary.AssemblyInfo.cs
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/obj/Debug/net8.0/AlgorithmLibrary.csproj.CoreCompileInputs.cache
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/obj/Debug/net8.0/AlgorithmLibrary.dll
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/obj/Debug/net8.0/refint/AlgorithmLibrary.dll
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/obj/Debug/net8.0/AlgorithmLibrary.pdb
+/Users/trygvebechsgaard/Repoes/AlgorithmPractice/src/AlgorithmLibrary/obj/Debug/net8.0/ref/AlgorithmLibrary.dll
