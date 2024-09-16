@@ -4,23 +4,27 @@ namespace AlgorithmLibrary.Arrays
 {
     public class MyStack
     {
-        private int[] Arr;
+        private int[] arr;
         private int top;
         
         public MyStack()
         {
-            int[] Arr = new int[1000];
-            int top = -1;
+            arr = new int[1000];
+            top = -1;
         }
 
         public void Push(int x)
         {
-            Arr[++top] = x;
+            arr[++top] = x;
         }
 
         public int Pop()
         {
-            return Arr[top--];
+            if (top == -1)
+            {
+                throw new IndexOutOfRangeException("Stack is empty");
+            }
+            return arr[top--];
         }
     }
 }
