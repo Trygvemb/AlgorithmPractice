@@ -31,6 +31,7 @@ __pycache__/
 
 # Ignore JavaScript map files
 *.map
+
 # Ignore DLL files
 *.dll
 
@@ -40,5 +41,24 @@ __pycache__/
 # Ignore config files
 *.config
 
-# ignore object files
+# Ignore object files
 *.obj
+
+# Ignore test results
+test-results/
+test-output/
+*.trx
+*.coverage
+*.coveragexml
+
+# Ignore coverage reports
+coverage/
+coverage-report/
+*.lcov
+*.lcov.info
+
+# Ignore temporary files
+tmp/
+temp/
+*.tmp
+*.temp
