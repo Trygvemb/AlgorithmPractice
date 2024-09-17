@@ -19,46 +19,15 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Ignore compiled files
-*.out
-*.class
-*.o
-*.so
-
-# Ignore Python cache files
-__pycache__/
-*.pyc
-
-# Ignore JavaScript map files
-*.map
-
-# Ignore DLL files
-*.dll
-
-# Ignore PDB files
+# Ignore debug and build files
+bin/
+obj/
 *.pdb
-
-# Ignore config files
-*.config
-
-# Ignore object files
-*.obj
-
-# Ignore test results
-test-results/
-test-output/
-*.trx
-*.coverage
-*.coveragexml
-
-# Ignore coverage reports
-coverage/
-coverage-report/
-*.lcov
-*.lcov.info
-
-# Ignore temporary files
-tmp/
-temp/
-*.tmp
-*.temp
+*.exe
+*.dll
+*.cache
+*.ilk
+*.log
+*.user
+*.suo
+*.sln.docstates
