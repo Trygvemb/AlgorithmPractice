@@ -1,5 +1,5 @@
-
 using System;
+using System.IO;
 using Xunit;
 using AlgorithmLibrary.Stacks;
 
@@ -7,6 +7,8 @@ namespace AlgorithmLibrary.Test
 {
     public class StackTest
     {
+        private static readonly object ConsoleOutputLock = new object();
+
         [Fact]
         public void Push_ShouldAddItemToStack()
         {
@@ -72,13 +74,16 @@ namespace AlgorithmLibrary.Test
             stack.Push(2);
             stack.Push(3);
 
-            using (var sw = new System.IO.StringWriter())
+            lock (ConsoleOutputLock)
             {
-                Console.SetOut(sw);
-                stack.PrintStack();
-                var result = sw.ToString().Trim();
+                using (var sw = new StringWriter())
+                {
+                    Console.SetOut(sw);
+                    stack.PrintStack();
+                    var result = sw.ToString().Trim();
 
-                Assert.Equal("1 2 3", result);
+                    Assert.Equal("1 2 3", result);
+                }
             }
         }
     }

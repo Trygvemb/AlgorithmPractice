@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Xunit;
 using AlgorithmLibrary.Stacks;
 
@@ -6,6 +7,8 @@ namespace AlgorithmLibrary.Test
 {
     public class StackAsLinkedListTest
     {
+        private static readonly object ConsoleOutputLock = new object();
+
         [Fact]
         public void Push_ShouldAddElementToStack()
         {
@@ -108,14 +111,17 @@ namespace AlgorithmLibrary.Test
             stack.Push(20);
             stack.Push(30);
 
-            // Act & Assert
-            var stringWriter = new System.IO.StringWriter();
-            Console.SetOut(stringWriter);
+            lock (ConsoleOutputLock)
+            {
+                // Act & Assert
+                var stringWriter = new StringWriter();
+                Console.SetOut(stringWriter);
 
-            stack.PrintStack();
+                stack.PrintStack();
 
-            var output = stringWriter.ToString().Trim();
-            Assert.Equal("30 20 10", output);
+                var output = stringWriter.ToString().Trim();
+                Assert.Equal("30 20 10", output);
+            }
         }
 
         [Fact]
