@@ -66,16 +66,18 @@ namespace AlgorithmLibrary.Queues
             return array[rear];
         }
 
-        public void PrintQueue()
+        public List<int> GetQueueElements()
         {
+            List<int> elements = new List<int>();
             if (IsEmpty())
-                return;
+            return elements;
 
-            for (int i = front; i <= rear; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.Write(array[i] + " ");
+            int index = (front + i) % capacity;
+            elements.Add(array[index]);
             }
-            Console.WriteLine();
+            return elements;
         }
     }
 }
