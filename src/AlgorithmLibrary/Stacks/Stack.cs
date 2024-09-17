@@ -33,13 +33,19 @@ namespace AlgorithmLibrary.Stacks
             return ele[top];
         }
 
-        public void PrintStack()
+        public string PrintStack()
         {
+            if (top == -1)
+            {
+                return string.Empty;
+            }
+
+            var result = new System.Text.StringBuilder();
             for (int i = 0; i <= top; i++)
             {
-                Console.Write(ele[i] + " ");
+                result.Append(ele[i] + " ");
             }
-            Console.WriteLine();
+            return result.ToString().Trim();
         }
 
         public void IsFull()

@@ -7,8 +7,6 @@ namespace AlgorithmLibrary.Test
 {
     public class StackTest
     {
-        private static readonly object ConsoleOutputLock = new object();
-
         [Fact]
         public void Push_ShouldAddItemToStack()
         {
@@ -74,17 +72,9 @@ namespace AlgorithmLibrary.Test
             stack.Push(2);
             stack.Push(3);
 
-            lock (ConsoleOutputLock)
-            {
-                using (var sw = new StringWriter())
-                {
-                    Console.SetOut(sw);
-                    stack.PrintStack();
-                    var result = sw.ToString().Trim();
+            var result = stack.PrintStack();
 
-                    Assert.Equal("1 2 3", result);
-                }
-            }
+            Assert.Equal("1 2 3", result);
         }
     }
 }
